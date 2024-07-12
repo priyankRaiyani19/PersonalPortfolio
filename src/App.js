@@ -1,7 +1,11 @@
+import React from "react";
+import NavBar from "./components/NavBar";
+
+
 function App() {
   return (
-    <div className='font-bold text-2xl font-signature text-amber-950'>
-        Priyank Raiyani
+    <div>
+      <NavBar/>
 
 
     </div>
