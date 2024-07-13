@@ -8,7 +8,7 @@ const Home = () => {
             <div>
                 <div>
                     <h2>
-
+                            I'm MERN STACK DEVELOPER
                     </h2>
                 </div>
             </div>
