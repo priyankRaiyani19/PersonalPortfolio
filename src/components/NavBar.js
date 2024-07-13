@@ -34,7 +34,7 @@ const NavBar = () => {
         <div className="flex justify-between items-center w-full
          h-20 text-white bg-black fixed px-[80px] py-[15px]">
             <div className="flex">
-                <h1 className="text-4xl ml-3 font-signature hidden lg:flex  ">
+                <h1 className="text-4xl ml-3 font-signature hidden lg:flex   ">
                     Raiyani Priyank
                 </h1>
                 <h1 className="text-4xl ml-2 font-signature sm:flex  lg:hidden ">
@@ -48,7 +48,7 @@ const NavBar = () => {
                         <li
                             key={id}
                             className="px-5 cursor-pointer capitalize
-                  font-medium text-white hover:scale-105 duration-200  text-2xl">
+                  font-medium text-white hover:scale-105 duration-200  text-xl hidden lg:flex">
                             {link}
                         </li>
                     ))}
@@ -71,7 +71,7 @@ const NavBar = () => {
                         {Links.map(({id, link}) => (
                             <li
                                 key={id}
-                                className="px-4 cursor-pointer capitalize py-6 text-5xl">
+                                className="px-4 cursor-pointer capitalize py-6 text-3xl">
                                 {link}
                             </li>
                         ))}
