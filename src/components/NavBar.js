@@ -1,45 +1,83 @@
 import React from "react";
 import {FaBars, FaTimes} from "react-icons/fa";
+import {useState} from "react";
 
 const NavBar = () => {
+
+    const [nav, setNav] = React.useState();
+
 
     const Links = [
         {
             id: 1,
-            Links: 'Home'
+            link: 'Home'
         },
         {
             id: 2,
-            Links: 'About'
+            link: 'About'
         },
         {
             id: 3,
-            Links: 'Porfolio'
-        }
-
-
+            link: 'Porfolio'
+        },
+        {
+            id: 4,
+            link: 'Skills'
+        },
+        {
+            id: 5,
+            link: 'Contact'
+        },
     ]
-
 
     return (
         <div className="flex justify-between items-center w-full
-         h-20 text-white bg-black fixed px-[90px] py-[18px]">
-            <div>
-                <h1 className="font-bold text-5xl ml-2 font-signature">
-                    Priyank Raiyani
+         h-20 text-white bg-black fixed px-[80px] py-[15px]">
+            <div className="flex">
+                <h1 className="text-4xl ml-3 font-signature hidden lg:flex  ">
+                    Raiyani Priyank
+                </h1>
+                <h1 className="text-4xl ml-2 font-signature sm:flex  lg:hidden ">
+                    R.P.
                 </h1>
             </div>
 
             <div>
-                <ul className="flex">
-                    <li className="px-5 cursor-pointer capitalize
-                  font-medium text-white hover:scale-105 duration-200">
-                        Home
-                    </li>
-
-
+                <ul className="md:hidden sm:hidden lg:flex">
+                    {Links.map(({id, link}) => (
+                        <li
+                            key={id}
+                            className="px-5 cursor-pointer capitalize
+                  font-medium text-white hover:scale-105 duration-200  text-2xl">
+                            {link}
+                        </li>
+                    ))}
                 </ul>
             </div>
+            <div
+                onClick={() => setNav(!nav)}
+                className="cursor-pointer pr-4 z-10 text-white sm:flex  lg:hidden md:flex">
+                {
+                    nav ? <FaTimes size={30}/> : <FaBars size={30}/>
+                }
+            </div>
+
+            {
+                (nav && (
+                    <ul
+                        className="flex flex-col justify-center items-center
+                absolute top-0 left-0 w-full h-screen bg-gradient-to-b
+                from-black to-gray-800 text-white ">
+                        {Links.map(({id, link}) => (
+                            <li
+                                key={id}
+                                className="px-4 cursor-pointer capitalize py-6 text-5xl">
+                                {link}
+                            </li>
+                        ))}
+                    </ul>
+                ))
+            }
 
         </div>
     )
