@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily:{
-      signature: ["Playfair Display"],
+      signature: ["Poppins"],
     },
   },
   plugins: [],
