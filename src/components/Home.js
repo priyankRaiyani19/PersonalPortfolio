@@ -1,10 +1,11 @@
 import React from 'react';
 import HeroImg from '../assets/Hero.jpg';
-import {PiArrowFatRightBold} from "react-icons/pi";
+import {PiArrowFatRightBold } from "react-icons/pi";
+import {Link} from "react-scroll"
 
 const Home = () => {
     return (
-        <div name="home" className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 ">
+        <div name="Home" className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 ">
 
             <div className="max-w-screen-lg mx-auto flex flex-col
              items-center justify-center h-full px-4 md:flex-row ">
@@ -19,14 +20,14 @@ const Home = () => {
                         I love the challenges and creativity involved in web development.
                     </p>
                     <div>
-                        <button className="group w-fit my-2 px-6 py-3 flex items-center rounded-md
+                        <Link to="Portfolio" smooth duration={500} className="group w-fit my-2 px-6 py-3 flex items-center rounded-md
                         bg-gradient-to-r from-red-500 via-red-600 to-red-700 cursor-pointer ">
-                            Porfolio
+                          Portfolio
                             <span className=" text-white group-hover:rotate-90 duration-500">
                                 <PiArrowFatRightBold size={20} className=" ml-1"/>
                             </span>
 
-                        </button>
+                        </Link>
                     </div>
                 </div>
                 <div>

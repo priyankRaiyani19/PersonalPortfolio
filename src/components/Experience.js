@@ -10,7 +10,6 @@ import git from '../assets/Git.png';
 import mongodb from '../assets/mongo.png';
 import Express from '../assets/Express.png';
 
-
 const Experience = () => {
 
     const imges = [
@@ -18,56 +17,55 @@ const Experience = () => {
             id: 1,
             src: html,
             name: "HTML",
-            style:'shadow-orange-500'
+            style: 'shadow-orange-500'
         },
         {
             id: 2,
             src: css,
             name: "CSS",
-            style:'shadow-blue-500'
+            style: 'shadow-blue-500'
         },
         {
             id: 3,
             src: tailwind,
             name: "TailWind",
-            style:'shadow-sky-500'
+            style: 'shadow-sky-500'
         },
         {
             id: 4,
             src: js,
             name: "Javascript",
-            style:'shadow-yellow-500'
+            style: 'shadow-yellow-500'
         },
         {
             id: 5,
             src: react,
             name: "React.js",
-            style:'shadow-blue-500'
+            style: 'shadow-blue-500'
         },
         {
             id: 6,
             src: node,
             name: "Node.js",
-            style:'shadow-green-300'
+            style: 'shadow-green-300'
         },
         {
             id: 7,
             src: mongodb,
             name: "MongoDb",
-            style:'shadow-green-600'
+            style: 'shadow-green-600'
         },
         {
             id: 8,
             src: github,
             name: "GitHub",
-            style:'shadow-gray-500'
+            style: 'shadow-gray-500'
         },
-
         {
             id: 9,
             src: git,
             name: "Git",
-            style:'shadow-red-400'
+            style: 'shadow-red-400'
         },
         // {
         //     id: 10,
@@ -75,9 +73,7 @@ const Experience = () => {
         //     name: "Express.js",
         //     style:'shadow-blue-500'
         // },
-
     ]
-
 
     return (
         <div name="Experience"
@@ -87,7 +83,6 @@ const Experience = () => {
                     <p className="text-5xl font-bold inline border-b-4  py-2 border-gray-400">
                         Experience
                     </p>
-
                     <p className="py-6 text-3xl ">
                         There are technologies I've worked with
                     </p>
@@ -96,7 +91,7 @@ const Experience = () => {
                 <div className=" w-full grid grid-cols-2 sm:grid-cols-3
                 gap-8 px-12 py-8 sm:px-0 text-center">
 
-                    {imges.map(({id, src, name,style}) => (
+                    {imges.map(({id, src, name, style}) => (
 
                         <div key={id}
                              className={` shadow-md hover:scale-110 duration-500 rounded-lg ${style} `}>
@@ -107,11 +102,7 @@ const Experience = () => {
                         </div>
                     ))}
                 </div>
-
-
             </div>
-
-
         </div>
     );
 };
