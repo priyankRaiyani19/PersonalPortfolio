@@ -34,8 +34,6 @@ const Home = () => {
                          className="rounded-3xl mx-auto  h-[450px] w-[350px]  md:w-[825px]"/>
                 </div>
             </div>
-
-
         </div>
     );
 };

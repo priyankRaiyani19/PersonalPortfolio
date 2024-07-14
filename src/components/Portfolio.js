@@ -57,7 +57,7 @@ const Portfolio = () => {
                     <p className="text-5xl font-bold inline border-b-4 border-gray-400 ">
                         Portfolio
                     </p>
-                    <p className="py-6 text-3xl     ">
+                    <p className="py-6 text-3xl">
                         Check out some of my work right here
                     </p>
                 </div>
