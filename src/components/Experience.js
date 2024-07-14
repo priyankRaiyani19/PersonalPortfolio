@@ -8,7 +8,7 @@ import tailwind from '../assets/tailwind.png';
 import node from '../assets/node.png';
 import git from '../assets/Git.png';
 import mongodb from '../assets/mongo.png';
-import Express from '../assets/Express.png';
+
 
 const Experience = () => {
 
