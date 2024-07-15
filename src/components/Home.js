@@ -31,7 +31,7 @@ const Home = () => {
                         </Link>
                     </div>
                 </div>
-                <div className=' ml-[50px] mt-[570px] h-[900px] w-[1800px] lg:flex md:'>
+                <div className='flex ml-[50px] mt-[570px] h-[900px] w-[1800px] lg:flex md:'>
                     <img src={HeroImg} alt="Notfound"
                          className="rounded-3xl mx-auto    lg:h-[500px]  "/>
                 </div>
