@@ -37,7 +37,7 @@ const NavBar = () => {
                 <h1 className="text-4xl ml-3 font-signature font-bold hidden lg:flex    ">
                     Raiyani Priyank
                 </h1>
-                <h1 className="text-3xl ml-0 font-signature sm:flex  lg:hidden ">
+                <h1 className="text-3xl ml-0 font-signature sm:flex font-bold lg:hidden ">
                     R.P.
                 </h1>
             </div>
