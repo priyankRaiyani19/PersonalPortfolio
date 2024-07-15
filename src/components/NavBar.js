@@ -34,10 +34,10 @@ const NavBar = () => {
         <div className="flex justify-between sm:justify-between items-center w-full z-20
          h-20 text-white bg-black fixed px-[80px] py-[15px]">
             <div className="flex">
-                <h1 className="text-4xl ml-3 font-signature font-bold hidden lg:flex    ">
+                <h1 className="text-4xl ml-3 font-signature font-semibold hidden lg:flex    ">
                     Raiyani Priyank
                 </h1>
-                <h1 className="text-3xl ml-0 font-signature sm:flex font-bold lg:hidden ">
+                <h1 className="text-3xl ml-0 font-signature sm:flex font-semibold  lg:hidden ">
                     R.P.
                 </h1>
             </div>
