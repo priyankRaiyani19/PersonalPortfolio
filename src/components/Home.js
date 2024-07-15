@@ -10,7 +10,7 @@ const Home = () => {
             <div className="max-w-screen-lg mx-auto flex flex-col
              items-center justify-center h-full px-4 md:flex-row ">
                 <div className="text-white flex flex-col justify-center h-full">
-                    <h2 className="lg:text-5xl sm:text-lg  font-bold text-white">
+                    <h2 className="lg:text-5xl sm:flex  font-bold text-white">
                         I'm MERN STACK DEVELOPER
                     </h2>
                     <p className=" text-gray-400 font-bold py-4 max-w-screen-2xl ">
@@ -30,9 +30,9 @@ const Home = () => {
                         </Link>
                     </div>
                 </div>
-                <div>
+                <div >
                     <img src={HeroImg} alt="Notfound"
-                         className="rounded-3xl mx-auto  h-[450px] w-[350px]  md:w-[825px]"/>
+                         className="rounded-3xl mx-auto lg:mx-[30px]  h-[410px] w-[370px]  md:w-[990px]"/>
                 </div>
             </div>
         </div>
