@@ -12,7 +12,7 @@ const Home = () => {
             <div className="max-w-screen-lg mx-auto flex flex-col
              items-center justify-between h-full px-4 md:flex-row sm:flex-row">
                 <div className="text-white flex flex-col justify-center h-full">
-                    <h2 className="lg:text-5xl sm:flex  font-bold text-black animate-glowBorder">
+                    <h2 className="lg:text-4xl sm:flex  font-bold text-black animate-glowBorder">
                         I'm MERN STACK DEVELOPER
                     </h2>
                     <p className=" text-gray-400 font-bold py-4 max-w-screen-2xl ">
