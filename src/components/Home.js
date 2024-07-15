@@ -7,7 +7,7 @@ const Home = () => {
     return (
         <div name="Home"
              className="h-screen w-full bg-gradient-to-b from-black via-black
-              to-gray-800 border-b border-gray-500 ">
+              to-gray-800 ">
 
             <div className="max-w-screen-lg mx-auto flex flex-col
              items-center justify-between h-full px-4 md:flex-row sm:flex-row">
