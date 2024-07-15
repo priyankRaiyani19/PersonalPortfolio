@@ -15,7 +15,7 @@ const Home = () => {
                     className="absolute bottom-1/4 right-1/3 w-96 h-96 bg-gradient-to-r from-yellow-400 to-red-500 rounded-full filter blur-3xl opacity-50 animate-pulse"></div>
             </div>
 
-            <div className="max-w-screen-lg mx-auto flex flex-col
+            <div className="max-w-screen-lg mx-auto flex flex-col z-10
              items-center justify-between h-full px-4 md:flex-row sm:flex-row">
                 <div className="text-white flex flex-col justify-center h-full">
                     <h2 className="lg:text-4xl sm:flex  font-bold text-black animate-glowBorder">
@@ -27,7 +27,7 @@ const Home = () => {
                         My approach emphasizes seamless user experiences and optimized performance.
                         I love the challenges and creativity involvled in web development.
                     </p>
-                    <div>
+                    <div className="z-10">
                         <Link to="Portfolio" smooth duration={500} className="group w-fit my-2 px-6 py-3 flex items-center rounded-md
                         bg-gradient-to-r from-red-500 via-red-600 to-red-700 cursor-pointer ">
                             Portfolio
