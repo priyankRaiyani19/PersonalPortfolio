@@ -19,7 +19,7 @@ const Home = () => {
                         I specialize in frontend development, crafting responsive web applications with React.js and
                         Tailwind CSS.
                         My approach emphasizes seamless user experiences and optimized performance.
-                        I love the challenges and creativity involved in web development.
+                        I love the challenges and creativity involvled in web development.
                     </p>
                     <div>
                         <Link to="Portfolio" smooth duration={500} className="group w-fit my-2 px-6 py-3 flex items-center rounded-md
