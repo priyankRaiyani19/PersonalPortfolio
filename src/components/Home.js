@@ -7,7 +7,13 @@ const Home = () => {
     return (
         <div name="Home"
              className="h-screen w-full bg-gradient-to-b from-black via-black
-              to-gray-800  sm:border-b-gray-500 lg:border-hidden sm:border-b-[3px] ">
+              to-gray-800  sm:border-b-gray-500 lg:border-hidden sm:border-b-[3px] z-10 ">
+            <div className="absolute inset-0 z-0 overflow-x-hidden">
+                <div
+                    className="absolute top-1/3 left-1/4 w-96 h-96 bg-gradient-to-r from-purple-400 to-blue-500 rounded-full filter blur-3xl opacity-50 animate-pulse"></div>
+                <div
+                    className="absolute bottom-1/4 right-1/3 w-96 h-96 bg-gradient-to-r from-yellow-400 to-red-500 rounded-full filter blur-3xl opacity-50 animate-pulse"></div>
+            </div>
 
             <div className="max-w-screen-lg mx-auto flex flex-col
              items-center justify-between h-full px-4 md:flex-row sm:flex-row">
@@ -32,7 +38,7 @@ const Home = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='flex mt-[610px] h-[1000px] w-[2500px] hidden lg:flex '>
+                <div className='flex mt-[610px] h-[1000px] w-[2500px] hidden lg:flex z-10 '>
                     <img src={HeroImg} alt="Notfound"
                          className=" mx-auto lg:mx-[40px]
                          lg:h-[612px] lg:w-[2500px] md:w-[990px]"/>
