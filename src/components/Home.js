@@ -10,7 +10,7 @@ const Home = () => {
             <div className="max-w-screen-lg mx-auto flex flex-col
              items-center justify-center h-full px-4 md:flex-row ">
                 <div className="text-white flex flex-col justify-center h-full">
-                    <h2 className="text-4xl sm:text-lg md:text-lg  font-bold text-white">
+                    <h2 className="text-4xl sm:text-lg  font-bold text-white">
                         I'm MERN STACK DEVELOPER
                     </h2>
                     <p className=" text-gray-400 font-bold py-4 max-w-screen-2xl ">
