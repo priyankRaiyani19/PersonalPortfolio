@@ -24,15 +24,16 @@ const Portfolio = () => {
 
         },
         {
-            id: 3,
-            src: PasswordGenerator,
-            Name: "Password Generator"
-
-        },
-        {
             id: 4,
             src: VedaVerse,
             Name: "Veda-Verse"
+
+        },
+        {
+
+            id: 3,
+            src: PasswordGenerator,
+            Name: "Password Generator"
 
         },
         {

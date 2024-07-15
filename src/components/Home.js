@@ -34,11 +34,12 @@ const Home = () => {
                 </div>
                 <div className='flex mt-[610px] h-[1000px] w-[2500px] hidden lg:flex '>
                     <img src={HeroImg} alt="Notfound"
-                         className="rounded-3xl mx-auto lg:mx-[40px]
+                         className=" mx-auto lg:mx-[40px]
                          lg:h-[612px] lg:w-[2500px] md:w-[990px]"/>
                 </div>
                 <div className='flex mt-8 lg:mt-0 lg:hidden sm:flex z-10'>
-                    <img src={HeroImg} alt="Notfound" className="rounded-3xl mx-auto lg:h-[500px] max-w-full"/>
+                    <img src={HeroImg} alt="Notfound"
+                         className="rounded-3xl mx-auto lg:h-[500px] max-w-full"/>
                 </div>
             </div>
         </div>
