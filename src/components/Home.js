@@ -35,7 +35,7 @@ const Home = () => {
                 </div>
 
 
-                <div className='flex mt-8 lg:mt-0 lg:hidden sm:flex'>
+                <div className='flex mt-8 lg:mt-0 lg:hidden sm:flex z-10'>
                     <img src={HeroImg} alt="Notfound" className="rounded-3xl mx-auto lg:h-[500px] max-w-full" />
                 </div>
             </div>
