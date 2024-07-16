@@ -10,9 +10,11 @@ const Home = () => {
               to-gray-800  sm:border-b-gray-500 lg:border-hidden sm:border-b-[3px] z-10 ">
             <div className="absolute inset-0 z-0 overflow-x-hidden">
                 <div
-                    className="absolute top-1/3 left-1/4 w-96 h-96 bg-gradient-to-r from-purple-400 to-blue-500 rounded-full filter blur-3xl opacity-50 animate-pulse"></div>
+                    className="absolute top-1/3 left-1/4 w-96 h-96 bg-gradient-to-r
+                     from-purple-400 to-blue-500 rounded-full filter blur-3xl opacity-50 animate-pulse"></div>
                 <div
-                    className="absolute bottom-1/4 right-1/3 w-96 h-96 bg-gradient-to-r from-yellow-400 to-red-500 rounded-full filter blur-3xl opacity-50 animate-pulse"></div>
+                    className="absolute bottom-1/4 right-1/3 w-96 h-96 bg-gradient-to-r
+                    from-yellow-400 to-red-500 rounded-full filter blur-3xl opacity-50 animate-pulse"></div>
             </div>
 
             <div className="max-w-screen-lg mx-auto flex flex-col z-10
@@ -28,8 +30,9 @@ const Home = () => {
                         I love the challenges and creativity involvled in web development.
                     </p>
                     <div className="z-10">
-                        <Link to="Portfolio" smooth duration={500} className="group w-fit my-2 px-6 py-3 flex items-center rounded-md
-                        bg-gradient-to-r from-red-500 via-red-600 to-red-700 cursor-pointer ">
+                        <Link to="Portfolio" smooth duration={500}
+                              className="group w-fit my-2 px-6 py-3 flex items-center rounded-md
+                                bg-gradient-to-r from-red-500 via-red-600 to-red-700 cursor-pointer ">
                             Portfolio
                             <span className=" text-white group-hover:rotate-90 duration-500">
                                 <PiArrowFatRightBold size={20} className=" ml-1"/>
