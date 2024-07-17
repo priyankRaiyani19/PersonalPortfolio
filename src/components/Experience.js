@@ -62,12 +62,12 @@ const Experience = () => {
             name: "GitHub",
             style: 'shadow-gray-700 hover:shadow-gray-300'
         },
-        {
-            id: 9,
-            src: git,
-            name: "Git",
-            style: 'shadow-red-700 hover:shadow-red-400'
-        },
+        // {
+        //     id: 9,
+        //     src: git,
+        //     name: "Git",
+        //     style: 'shadow-red-700 hover:shadow-red-400'
+        // },
         {
             id: 10,
             src: FireBase,
