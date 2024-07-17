@@ -13,6 +13,7 @@
         /*font-family: "Playfair Display", serif;*/
         /*font-family: Raleway, sans-serif;*/
         font-family: Century Gothic, sans-serif;
+        scroll-behavior: smooth;
         /*font-family: monospace;*/
         /*font-family: "Poppins ExtraBold";*/
     }

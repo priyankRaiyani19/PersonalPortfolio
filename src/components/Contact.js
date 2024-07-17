@@ -19,7 +19,7 @@ const Contact = ({ db }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const customId = profile.emailField; // Use email as the custom ID, you can generate any custom ID here
+        const customId = profile.nameField; // Use email as the custom ID, you can generate any custom ID here
         try {
             await setDoc(doc(db, "FormDetails", customId), {
                 name: profile.nameField,
@@ -34,6 +34,7 @@ const Contact = ({ db }) => {
                 messageField: "",
                 contactField:"",
             });
+            window.scrollTo(0, 0);
         } catch (error) {
             alert(error.message);
         }
@@ -57,18 +58,18 @@ const Contact = ({ db }) => {
                         value={profile.nameField}
                         required
                         placeholder="Enter Your Name"
-                        className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                        className="p-2 text-xl  bg-transparent border-2 rounded-md text-white focus:outline-none"
                     />
                     <input
                         type="email"
                         id="emailField"
                         pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                        minlength={10} maxlength={20}
+                        min={10} max={20}
                         onChange={handleChange}
                         value={profile.emailField}
                         required
                         placeholder="Enter Your E-mail Id"
-                        className="p-2 my-5 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                        className="p-2 my-5 text-xl  bg-transparent border-2 rounded-md text-white focus:outline-none"
                     />
                     <input
                          type="tel" maxLength={10}
@@ -77,16 +78,17 @@ const Contact = ({ db }) => {
                         value={profile.contactField}
                         required
                         placeholder="Enter Your Contact No."
-                        className="p-2 mb-5 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                        className="p-2 mb-5 text-xl  bg-transparent border-2 rounded-md text-white focus:outline-none"
                     />
                     <textarea
                         id="messageField"
                         onChange={handleChange}
                         value={profile.messageField}
                         required
-                        rows={10}
+                        maxLength={300}
+                        rows={8}
                         placeholder="Enter Your Message"
-                        className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+                        className="p-2 bg-transparent text-xl border-2 rounded-md text-white focus:outline-none"
                     />
                     <button
                         type="submit"
