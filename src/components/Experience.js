@@ -6,7 +6,7 @@ import github from '../assets/github.png';
 import js from '../assets/javascript.png';
 import tailwind from '../assets/tailwind.png';
 import node from '../assets/node.png';
-import git from '../assets/Git.png';
+// import git from '../assets/Git.png';
 import mongodb from '../assets/mongo.png';
 import FireBase from '../assets/FireBase.png';
 
