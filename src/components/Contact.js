@@ -58,7 +58,7 @@ const Contact = ({ db }) => {
                         onChange={handleChange}
                         value={profile.nameField}
                         required
-                        placeholder="Enter Your Name"
+                        placeholder="Enter Your Full Name"
                         className="p-2 text-xl  bg-transparent border-2 rounded-md text-white focus:outline-none"
                     />
                     <input
@@ -69,7 +69,7 @@ const Contact = ({ db }) => {
                         onChange={handleChange}
                         value={profile.emailField}
                         required
-                        placeholder="Enter Your E-mail Id"
+                        placeholder="Enter Your E-mail"
                         className="p-2 my-5 text-xl  bg-transparent border-2 rounded-md text-white focus:outline-none"
                     />
                     <input
