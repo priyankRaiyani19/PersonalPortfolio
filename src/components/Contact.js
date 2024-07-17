@@ -25,6 +25,7 @@ const Contact = ({ db }) => {
                 name: profile.nameField,
                 mail: profile.emailField,
                 message: profile.messageField,
+                contact: profile.contactField,
             });
             alert("Form successfully submitted!");
             // window.location.reload();
