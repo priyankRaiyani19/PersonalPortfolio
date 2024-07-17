@@ -8,6 +8,7 @@ import tailwind from '../assets/tailwind.png';
 import node from '../assets/node.png';
 import git from '../assets/Git.png';
 import mongodb from '../assets/mongo.png';
+import FireBase from '../assets/FireBase.png';
 
 
 const Experience = () => {
@@ -17,62 +18,70 @@ const Experience = () => {
             id: 1,
             src: html,
             name: "HTML",
-            style: 'shadow-orange-500'
+            style: 'shadow-orange-700 shadow-yellow-300'
         },
         {
             id: 2,
             src: css,
             name: "CSS",
-            style: 'shadow-blue-500'
+            style: 'shadow-blue-700 shadow-blue-300'
         },
         {
             id: 3,
             src: tailwind,
             name: "TailWind",
-            style: 'shadow-sky-500'
+            style: 'shadow-sky-700 shadow-sky-300'
         },
         {
             id: 4,
             src: js,
             name: "Javascript",
-            style: 'shadow-yellow-500'
+            style: 'shadow-yellow-700 hover:shadow-yellow-300'
         },
         {
             id: 5,
             src: react,
             name: "React.js",
-            style: 'shadow-blue-500'
+            style: 'shadow-blue-700 hover:shadow-blue-300'
         },
         {
             id: 6,
             src: node,
             name: "Node.js",
-            style: 'shadow-green-300'
+            style: 'shadow-green-700 hover:shadow-green-300'
         },
         {
             id: 7,
             src: mongodb,
             name: "MongoDb",
-            style: 'shadow-green-600'
+            style: 'shadow-green-700 hover:shadow-green-300'
         },
         {
             id: 8,
             src: github,
             name: "GitHub",
-            style: 'shadow-gray-500'
+            style: 'shadow-gray-700 hover:shadow-gray-300'
         },
         {
             id: 9,
             src: git,
             name: "Git",
-            style: 'shadow-red-400'
+            style: 'shadow-red-700 hover:shadow-red-400'
         },
+        {
+            id: 10,
+            src: FireBase,
+            name: "FireBase",
+            style: 'shadow-yellow-700 hover:shadow-red-300',
+
+        }
         // {
-        //     id: 10,
+        //     id: 11,
         //     src: Express,
         //     name: "Express.js",
         //     style:'shadow-blue-500'
         // },
+
     ]
 
     return (
