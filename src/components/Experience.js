@@ -108,7 +108,7 @@ const Experience = () => {
                         <div key={id}
                              className={` shadow-md hover:scale-110 duration-500 rounded-lg ${style} `}>
                             <img src={src} alt="" className="w-20 mx-auto"/>
-                            <p className="mt-5 text-xl">
+                            <p className="mt-5 text-lg">
                                 {name}
                             </p>
                         </div>
