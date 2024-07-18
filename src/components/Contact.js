@@ -95,6 +95,7 @@ const Contact = ({ db }) => {
                         id="contactField"
                         onChange={handleChange}
                         value={profile.contactField}
+                        maxLength={10}
                         required
                         placeholder="Enter Your Contact No."
                         className="p-2 mb-5 bg-transparent border-2 rounded-md text-white focus:outline-none"
