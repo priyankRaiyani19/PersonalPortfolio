@@ -10,6 +10,7 @@ const Contact = ({ db }) => {
         messageField: "",
         contactField: "",
     });
+    const [isLoading, setIsLoading] = useState(false); // New state for loading
 
     const handleChange = (event) => {
         const { id, value } = event.target;
@@ -26,6 +27,7 @@ const Contact = ({ db }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+        setIsLoading(true); // Set loading state to true
         const customId = profile.nameField; // Use name as the custom ID, you can generate any custom ID here
         try {
             await setDoc(doc(db, "FormDetails", customId), {
@@ -47,6 +49,8 @@ const Contact = ({ db }) => {
             }, 3000); // Wait for 3 seconds before reloading the page
         } catch (error) {
             toast.error(error.message);
+        } finally {
+            setIsLoading(false); // Set loading state to false
         }
     };
 
@@ -58,7 +62,7 @@ const Contact = ({ db }) => {
     };
 
     return (
-        <div name="Contact" className="bg-gradient-to-b from-black to-gray-800 w-full text-white lg:pt-[210px] p-4">
+        <div name="Contact" className="bg-gradient-to-b from-black to-gray-800 w-full text-white p-4">
             <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
                 <div className="pb-8">
                     <p className="text-5xl font-bold inline border-b-4 border-gray-400">Contact</p>
@@ -106,9 +110,10 @@ const Contact = ({ db }) => {
                     />
                     <button
                         type="submit"
-                        className="text-white px-6 py-3 my-8 mx-auto flex items-center hover:scale-105 duration-500 rounded-md bg-gradient-to-r from-red-500 via-red-600 to-red-700"
+                        disabled={isLoading} // Disable button when loading
+                        className={`text-white px-6 py-3 my-8 mx-auto flex items-center hover:scale-105 duration-500 rounded-md ${isLoading ? 'bg-gray-600' : 'bg-gradient-to-r from-red-500 via-red-600 to-red-700'}`}
                     >
-                        Submit
+                        {isLoading ? 'Submitting...' : 'Submit'}
                     </button>
                 </form>
             </div>
