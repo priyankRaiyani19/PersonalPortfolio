@@ -88,7 +88,7 @@ const Experience = () => {
     return (
         <div name="Experience"
              className=" bg-gradient-to-b from-gray-800 to-black w-full text-white md:h-screen sm:m-[20]">
-            <div className="max-w-screen- p-4 mx-auto my-auto flex flex-col justify-center w-full h-full">
+            <div className="max-w-screen-lg p-4 mx-auto  flex flex-col justify-center w-full h-full">
                 <div className="pb-8">
                     <p className="text-5xl font-bold inline border-b-4  py-2 border-gray-400">
                         Experience
@@ -98,7 +98,7 @@ const Experience = () => {
                     </p>
                 </div>
 
-                <div className=" w-full grid grid-cols-2 sm:grid-cols-3
+                <div className=" w-full h-full grid grid-cols-2 sm:grid-cols-3
                 gap-8 px-12 py-8 sm:px-0 text-center">
 
                     {imges.map(({id, src, name, style}) => (
