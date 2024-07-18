@@ -1,16 +1,23 @@
 import React, { useState } from 'react';
-import {  setDoc, doc} from "firebase/firestore";
+import { setDoc, doc } from "firebase/firestore";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = ({ db }) => {
     const [profile, setProfile] = useState({
         nameField: "",
         emailField: "",
         messageField: "",
-        contactField:"",
+        contactField: "",
     });
 
     const handleChange = (event) => {
         const { id, value } = event.target;
+        // Validate input for contactField (only allow digits)
+        if (id === 'contactField') {
+            const isValid = /^\d*$/.test(value);
+            if (!isValid) return; // If invalid, do not update state
+        }
         setProfile((prevProfile) => ({
             ...prevProfile,
             [id]: value,
@@ -19,30 +26,39 @@ const Contact = ({ db }) => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const customId = profile.nameField; // Use email as the custom ID, you can generate any custom ID here
+        const customId = profile.nameField; // Use name as the custom ID, you can generate any custom ID here
         try {
             await setDoc(doc(db, "FormDetails", customId), {
                 name: profile.nameField,
                 mail: profile.emailField,
                 message: profile.messageField,
-                contact: profile.contactField,
+                contact: profile.contactField, // Ensure to save the contactField value
             });
-            alert("Form successfully submitted!");
-            // window.location.reload();
+            toast.success("Form successfully submitted!");
             setProfile({
                 nameField: "",
                 emailField: "",
                 messageField: "",
-                contactField:"",
+                contactField: "",
             });
-            window.scrollTo(0, 0);
+            setTimeout(() => {
+                scrollToTop(); // Smooth scroll to the top
+                window.location.reload(); // Reload the page
+            }, 3000); // Wait for 3 seconds before reloading the page
         } catch (error) {
-            alert(error.message);
+            toast.error(error.message);
         }
     };
 
+    const scrollToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
     return (
-        <div name="Contact" className="bg-gradient-to-b from-black to-gray-800 w-full text-white p-4 lg:pt-[200px]">
+        <div name="Contact" className="bg-gradient-to-b from-black to-gray-800 w-full text-white p-4">
             <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full">
                 <div className="pb-8">
                     <p className="text-5xl font-bold inline border-b-4 border-gray-400">Contact</p>
@@ -58,38 +74,35 @@ const Contact = ({ db }) => {
                         onChange={handleChange}
                         value={profile.nameField}
                         required
-                        placeholder="Enter Your Full Name"
-                        className="p-2 text-xl  bg-transparent border-2 rounded-md text-white focus:outline-none"
+                        placeholder="Enter Your Name"
+                        className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
                     />
                     <input
                         type="email"
                         id="emailField"
-                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                        min={10} max={20}
                         onChange={handleChange}
                         value={profile.emailField}
                         required
-                        placeholder="Enter Your E-mail"
-                        className="p-2 my-5 text-xl  bg-transparent border-2 rounded-md text-white focus:outline-none"
+                        placeholder="Enter Your E-mail Id"
+                        className="p-2 my-5 bg-transparent border-2 rounded-md text-white focus:outline-none"
                     />
                     <input
-                         type="tel" maxLength={10}
+                        type="tel"
                         id="contactField"
                         onChange={handleChange}
                         value={profile.contactField}
                         required
                         placeholder="Enter Your Contact No."
-                        className="p-2 mb-5 text-xl  bg-transparent border-2 rounded-md text-white focus:outline-none"
+                        className="p-2 mb-5 bg-transparent border-2 rounded-md text-white focus:outline-none"
                     />
                     <textarea
                         id="messageField"
                         onChange={handleChange}
                         value={profile.messageField}
                         required
-                        maxLength={300}
-                        rows={8}
+                        rows={10}
                         placeholder="Enter Your Message"
-                        className="p-2 bg-transparent text-xl border-2 rounded-md text-white focus:outline-none"
+                        className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
                     />
                     <button
                         type="submit"
@@ -99,6 +112,7 @@ const Contact = ({ db }) => {
                     </button>
                 </form>
             </div>
+            <ToastContainer position="top-center" />
         </div>
     );
 };
