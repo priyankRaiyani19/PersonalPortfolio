@@ -87,7 +87,7 @@ const Experience = () => {
 
     return (
         <div name="Experience"
-             className=" bg-gradient-to-b from-gray-800 to-black overflow-y-hidden w-full text-white
+             className=" bg-gradient-to-b from-gray-800 to-black overflow-y-scroll w-full text-white
              md:h-screen h-screen sm:m-[20]">
             <div className="max-w-screen-lg p-4 mx-auto my-auto
             flex flex-col justify-center w-full h-full">
