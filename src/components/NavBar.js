@@ -50,7 +50,7 @@ const NavBar = () => {
                             className="px-6 cursor-pointer capitalize
                   font-medium text-white hover:scale-105 duration-200 hover:bg-gray-800
                    hover:rounded-lg text-xl hidden lg:flex">
-                         <Link to={link} smooth duration={500}> {link}</Link>
+                         <Link to={link} smooth duration={400}> {link}</Link>
                         </li>
                     ))}
                 </ul>
