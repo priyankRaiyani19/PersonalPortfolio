@@ -6,7 +6,7 @@ import github from '../assets/github.png';
 import js from '../assets/javascript.png';
 import tailwind from '../assets/tailwind.png';
 import node from '../assets/node.png';
-// import git from '../assets/Git.png';
+import git from '../assets/Git.png';
 import mongodb from '../assets/mongo.png';
 import FireBase from '../assets/FireBase.png';
 
@@ -69,12 +69,12 @@ const Experience = () => {
             name: "GitHub",
             style: 'shadow-gray-700 hover:shadow-gray-300'
         },
-        // {
-        //     id: 9,
-        //     src: git,
-        //     name: "Git",
-        //     style: 'shadow-red-700 hover:shadow-red-400'
-        // },
+        {
+            id: 9,
+            src: git,
+            name: "Git",
+            style: 'shadow-red-700 hover:shadow-red-400'
+        },
 
         // {
         //     id: 11,
