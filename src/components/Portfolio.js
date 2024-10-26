@@ -1,10 +1,11 @@
 import React from 'react';
-import DemoPortfolio from '../assets/Portfolio/DemoPortfolio.png';
+// import DemoPortfolio from '../assets/Portfolio/DemoPortfolio.png';
 import Parallax from '../assets/Portfolio/Parallax.png';
 import Razorpay from '../assets/Portfolio/Razorpay.png';
 import StudyNotion from '../assets/Portfolio/StudyNotion.png';
 import VedaVerse from '../assets/Portfolio/VedaVerse.png';
-import PasswordGenerator from '../assets/Portfolio/PasswordGenertor.png';
+// import PasswordGenerator from '../assets/Portfolio/PasswordGenertor.png';
+import ShopingCart from '../assets/Portfolio/ShopingCart'
 
 
 const Portfolio = () => {
@@ -32,8 +33,8 @@ const Portfolio = () => {
         {
 
             id: 3,
-            src: PasswordGenerator,
-            Name: "Password Generator"
+            src: "ShopingCart",
+            Name: ShopingCart
 
         },
         {
@@ -42,12 +43,7 @@ const Portfolio = () => {
             Name: "Parallax"
 
         },
-        {
-            id: 6,
-            src: DemoPortfolio,
-            Name: "DemoPortfolio"
-
-        },
+       
     ]
 
     return (
