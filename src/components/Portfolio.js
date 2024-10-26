@@ -1,5 +1,5 @@
 import React from 'react';
-// import DemoPortfolio from '../assets/Portfolio/DemoPortfolio.png';
+import DemoPortfolio from '../assets/Portfolio/DemoPortfolio.png';
 import Parallax from '../assets/Portfolio/Parallax.png';
 import Razorpay from '../assets/Portfolio/Razorpay.png';
 import StudyNotion from '../assets/Portfolio/StudyNotion.png';
@@ -37,12 +37,19 @@ const Portfolio = () => {
             Name: "Shopping Cart"
 
         },
+       
         {
-            id: 5,
+            id:5,
+            src:DemoPortfolio,
+            Name:"DemoPortfolio"
+
+        },
+        {
+            id: 6,
             src: Parallax,
             Name: "Parallax"
 
-        },
+        }
        
     ]
 
