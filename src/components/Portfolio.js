@@ -5,7 +5,7 @@ import Razorpay from '../assets/Portfolio/Razorpay.png';
 import StudyNotion from '../assets/Portfolio/StudyNotion.png';
 import VedaVerse from '../assets/Portfolio/VedaVerse.png';
 // import PasswordGenerator from '../assets/Portfolio/PasswordGenertor.png';
-import ShopingCart from '../assets/Portfolio/ShopingCart'
+import ShoppingCart from '../assets/Portfolio/ShopingCart'
 
 
 const Portfolio = () => {
@@ -33,8 +33,8 @@ const Portfolio = () => {
         {
 
             id: 3,
-            src: ShopingCart,
-            Name: "Shoping Cart"
+            src: ShoppingCart,
+            Name: "Shopping Cart"
 
         },
         {
