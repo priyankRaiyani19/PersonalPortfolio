@@ -33,8 +33,8 @@ const Portfolio = () => {
         {
 
             id: 3,
-            src: "ShopingCart",
-            Name: ShopingCart
+            src: ShopingCart,
+            Name: "Shoping Cart"
 
         },
         {
