@@ -62,7 +62,9 @@ const Contact = ({ db }) => {
     };
 
     return (
-        <div name="Contact" className="bg-gradient-to-b from-black to-gray-800 w-full text-white p-4 lg:pt-[210px] md:mt-[210px]">
+
+        
+        <div name="Contact" className="bg-gradient-to-b from-black to-gray-800 w-full text-white p-4 lg:pt-[210px] ">
             <div className="flex flex-col p-4 justify-center max-w-screen-lg w-full mx-auto h-full">
                 <div className="pb-8">
                     <p className="text-5xl font-bold inline border-b-4 border-gray-400">Contact</p>

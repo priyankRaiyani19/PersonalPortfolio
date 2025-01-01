@@ -9,6 +9,8 @@ import node from '../assets/node.png';
 import git from '../assets/Git.png';
 import mongodb from '../assets/mongo.png';
 import FireBase from '../assets/FireBase.png';
+import Express from '../assets/Express.png';
+
 
 
 const Experience = () => {
@@ -57,11 +59,17 @@ const Experience = () => {
             style: 'shadow-green-700 hover:shadow-green-300'
         },
         {
-            id: 9,
+            id: 8,
             src: FireBase,
             name: "FireBase",
             style: 'shadow-yellow-700 hover:shadow-red-300',
 
+        },
+        {
+            id: 9,
+            src: Express,
+            name: "Express.js",
+            style:'shadow-blue-500'
         },
         {
             id: 10,
@@ -70,18 +78,13 @@ const Experience = () => {
             style: 'shadow-gray-700 hover:shadow-gray-300'
         },
         {
-            id: 9,
+            id: 11,
             src: git,
             name: "Git",
             style: 'shadow-red-700 hover:shadow-red-400'
         },
 
-        // {
-        //     id: 11,
-        //     src: Express,
-        //     name: "Express.js",
-        //     style:'shadow-blue-500'
-        // },
+      
 
     ]
 
