@@ -12,7 +12,6 @@ import FireBase from '../assets/FireBase.png';
 import Express from '../assets/Express.png';
 
 
-
 const Experience = () => {
 
     const imges = [
